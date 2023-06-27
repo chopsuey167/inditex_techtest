@@ -10,7 +10,6 @@ spring:
     default-property-inclusion: non_null
 
 # CLIENTS
-
 rest-client:
   mock:
     url: localhost:3001

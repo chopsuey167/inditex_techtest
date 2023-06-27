@@ -19,7 +19,7 @@ public class ProductController implements ProductApi {
   private final ProductDTOMapper mapper;
 
   @Override
-  public ResponseEntity<Set<ProductDetailDTO>> getProductSimilar(String productId) {
+  public ResponseEntity<Set<ProductDetailDTO>> getProductSimilar(String productId) throws Exception {
 
     List<ProductDetail> similarProducts = productService.getSimilarProducts(productId);
 

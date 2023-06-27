@@ -5,5 +5,5 @@ import java.util.List;
 
 public interface ProductService {
 
-  List<ProductDetail> getSimilarProducts(String productId);
+  List<ProductDetail> getSimilarProducts(String productId) throws Exception;
 }
