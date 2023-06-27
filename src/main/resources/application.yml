@@ -1,0 +1,16 @@
+server:
+  port: 5000
+spring:
+  application:
+    name: inditex-app
+  jackson:
+    deserialization:
+      FAIL_ON_UNKNOWN_PROPERTIES: true
+    property-naming-strategy: SNAKE_CASE
+    default-property-inclusion: non_null
+
+# CLIENTS
+
+rest-client:
+  mock:
+    url: localhost:3001
